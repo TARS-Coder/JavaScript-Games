@@ -1,0 +1,36 @@
+h2{
+    text-align: center;
+}
+#replay{
+    color: cornflowerblue;
+    text-align: center;
+    cursor: pointer;
+    visibility: hidden;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 2px black groove;
+    height: 512px;
+    width: 512px;
+}
+
+.grid img{
+    cursor: pointer;
+}
+
+.found{
+    cursor: default;
+    visibility: hidden;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: dimgrey;
+    color: white;
+    text-align: center;
+ }
+ 
