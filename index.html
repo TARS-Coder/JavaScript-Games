@@ -7,11 +7,27 @@
    <script src="app.js"></script>
 </head>
 <body>
-    <h2 id="result"></h2>
-    <h3 id="replay">Click here to Replay</h3>
-    <div class="grid">
-
+    <h1>Let's Check Your Memory! <span style="color: gold;">;)</span></h1>
+    <div class="container">
+        <div class="grid"></div>
+        <div class="scoreBoard">
+            <h2><u> Score Board </u></h2>
+            <table id="score-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Moves</th>
+                    </tr>
+                </thead>
+                <tbody id="score-body"></tbody>
+            </table>
+            <h3 id="replay">Click here to Replay</h3>
+            <button id="scoreReset">Reset Score Board</button>
+        </div>
     </div>
+    <h2 id="result"></h2>
     <div class="footer">
         <p>Made with <span style="font-size: 1.5em; color: red; vertical-align: sub;">♡</span> by Rajeev</p>
     </div>

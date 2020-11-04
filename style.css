@@ -1,29 +1,122 @@
-h2{
+h1{
     text-align: center;
+    margin: 15px 0;
+    color: #1979b3;
+}
+h2  {
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 0;
 }
 #replay{
     color: cornflowerblue;
     text-align: center;
     cursor: pointer;
-    visibility: hidden;
+    display: none;
 }
-.grid {
+
+.container{
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    border: 2px black groove;
+}
+
+.scoreBoard{
+    width:22%;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    margin-right: 10px;
+    padding: 10px;
+    border: 3px solid #cccccc;
+}
+
+.grid {
     height: 512px;
     width: 512px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px black groove;
 }
 
 .grid img{
     cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  
 }
 
+.card{
+    width: 128px;
+    height: 128px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card_face{
+    position: absolute;
+}
+
+.card_Back{
+        transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+  
 .found{
     cursor: default;
     visibility: hidden;
 }
+
+#score-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  #score-table td, #score-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #score-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #score-table tr:hover {background-color: #ddd;}
+  
+  #score-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff9933;
+    color: white;
+  }
+
+  #score-table tr:last-child{
+      border-top: 2px groove #000;
+      border-bottom: 2px groove #000;
+  }
+
+#scoreReset{
+    background-color: #ff9933;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    float: right;
+}  
+
+.win-mess{
+    text-align: center;
+    font-size: 18px;
+    color: gold;
+}
+
 .footer {
     position: fixed;
     left: 0;
