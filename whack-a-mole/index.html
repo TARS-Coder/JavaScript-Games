@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   <title>Whack a mole</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hit as many mole as you can <span style="color: gold;">;)</span></h1>
+    <h2>Time Left:- <span id="time-left">60</span></h2>
+    <div class="container">
+        <div class="grid">
+            <div class="square" id="1"></div>
+            <div class="square" id="2"></div>
+            <div class="square" id="3"></div>
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
+            <div class="square" id="6"></div>
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
+            <div class="square" id="9"></div>
+        </div>
+        <div class="scoreBoard">
+            <h2><u> Score Board </u></h2>
+            <table id="score-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Hits</th>
+                    </tr>
+                </thead>
+                <tbody id="score-body"></tbody>
+            </table>
+            <h3 id="replay">Click here to Replay</h3>
+            <button id="scoreReset">Reset Score Board</button>
+        </div>
+    </div>
+    <h2 id="result"></h2>
+    <div class="footer">
+        <p>Made with <span style="font-size: 1.5em; color: red; vertical-align: sub;">♡</span> by Rajeev</p>
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html>
