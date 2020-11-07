@@ -8,23 +8,29 @@ h2  {
     letter-spacing: 2px;
     margin: 10px 0;
 }
-#replay{
+
+.time-counter{
+    display: none;
+}
+
+#play{
     color: cornflowerblue;
     text-align: center;
     cursor: pointer;
-    display: none;
 }
 
 .container{
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .scoreBoard{
     width:22%;
-    position: absolute;
     right: 0;
+    position: absolute;
     background-color: #fff;
     margin-right: 10px;
     padding: 10px;
@@ -47,12 +53,21 @@ h2  {
     border: 2px solid black;
     background-color: #663100de;
     position: relative;
+    transition: background 0.3s ease-in-out;
+}
+
+.square:hover{
+    background-color: #8a4c12;
+}
+
+.square:active{
+    border-color: #fb3434;
 }
 
 .mole{
     background-image: url('mole.png');
-    background-size: cover;
-    background-position: center;
+    background-position: center 500%;
+    background-repeat: no-repeat;
 }
 
 #score-table {

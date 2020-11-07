@@ -6,21 +6,24 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hit as many mole as you can <span style="color: gold;">;)</span></h1>
-    <h2>Time Left:- <span id="time-left">60</span></h2>
     <div class="container">
-        <div class="grid">
-            <div class="square" id="1"></div>
-            <div class="square" id="2"></div>
-            <div class="square" id="3"></div>
-            <div class="square" id="4"></div>
-            <div class="square" id="5"></div>
-            <div class="square" id="6"></div>
-            <div class="square" id="7"></div>
-            <div class="square" id="8"></div>
-            <div class="square" id="9"></div>
+        <div>
+            <h1>Hit as many mole as you can <span style="color: gold;">;)</span></h1>
+            <h2 id="play">Start Game</h2>
+            <h2 class="time-counter">Time Left:- <span id="time-left">60</span></h2>
+            <div class="grid">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
         </div>
-        <div class="scoreBoard">
+    <div class="scoreBoard">
             <h2><u> Score Board </u></h2>
             <table id="score-table">
                 <thead>
@@ -33,7 +36,6 @@
                 </thead>
                 <tbody id="score-body"></tbody>
             </table>
-            <h3 id="replay">Click here to Replay</h3>
             <button id="scoreReset">Reset Score Board</button>
         </div>
     </div>
